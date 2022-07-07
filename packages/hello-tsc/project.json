@@ -1,0 +1,18 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/hello-tsc/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/hello-tsc",
+        "main": "packages/hello-tsc/src/index.ts",
+        "tsConfig": "packages/hello-tsc/tsconfig.lib.json",
+        "assets": ["packages/hello-tsc/*.md"]
+      }
+    }
+  },
+  "tags": []
+}

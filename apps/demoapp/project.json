@@ -1,0 +1,17 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/demoapp/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/demoapp",
+        "main": "apps/demoapp/src/main.ts",
+        "tsConfig": "apps/demoapp/tsconfig.app.json"
+      }
+    }
+  },
+  "tags": []
+}
